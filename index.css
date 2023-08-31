@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    user-select: none;
+} 
+
+h1,p{
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 12px;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.header-text{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    color: yellow;
+    font-size: 28px;
+    gap: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#menu{
+    margin-top: 50px;
+}
+
+/* Menu Section */
+.box{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid rgb(209, 209, 209);
+}
+
+.emoji{
+    font-size: 70px;
+    margin: 0;
+    width: 100px;
+    text-align: center;
+}
+
+.add{
+    display: flex;
+    font-size: 30px;
+    border: 3px solid rgb(209, 209, 209);
+    background: white;
+    border-radius: 50%;
+    align-items: center;
+    padding: 20px 0;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight: lighter;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 2%;
+}
+.add:hover{
+    background: rgb(214, 214, 214);
+}
+.add:active{
+    background: white;
+}
+
+/* Payment Section */
+/* Shared */
+.payment-count,
+.left-toggle,
+.total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.payment-count,
+.total{
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.payment-count h1,
+.total h1{
+    font-size: 24px;
+}
+
+i,
+.add,
+.pay-button,
+.payment-count button,
+.order-button{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#card-form,
+#payment{
+    display: none;
+}
+
+/* Individual */
+.line-2{
+    max-width: 500px;
+    margin: 50px auto 10px auto;
+    padding: 0 10px 40px 10px;
+}
+
+.line-2 h2{
+    margin: 120px 0 0 0;
+    text-align: center;
+    font-size: 36px;
+}
+.line-2 h3{
+    font-size: 28px;
+    text-align: center;
+    margin: 10px 0 100px 0;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.order-title{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.payment-count{
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-toggle{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-toggle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.payment-count button{
+    width: 35px;
+    height: 7px;
+    background-color: gray;
+    border: none;
+}
+.payment-count button:hover{
+    background-color: rgb(209, 209, 209);
+}
+.payment-count button:active{
+    background-color: gray;
+}
+
+.total{
+    border-top: 3px solid rgb(85, 85, 85);
+    padding: 10px 0 0 0;
+}
+
+.pay-button,
+.order-button{
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 30px 0 10px 0;
+    padding: 15px 0;
+    background-color: rgb(0, 255, 149);
+}
+.pay-button:hover,
+.order-button:hover{
+    background-color: rgb(141, 255, 207);
+}
+.pay-button:active,
+.order-button:active{
+    background-color: rgb(0, 255, 149);
+}
+
+/* Form Section */
+.form{
+    width: 50%;
+}
+.card-div{
+    max-width: 400px;
+    max-height: fit-content;
+    background-color: white;
+    box-shadow: 0px 0px 12px black;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 20px;
+    right: 20px;
+    bottom: 20%;
+    margin: auto;
+    padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.form-details h1{
+    margin: 10% 0 15px 0;
+}
+
+.form-details button,
+.form-details a{
+    letter-spacing: 1px;
+    width: 90%;
+    margin: 15px 0 0 0;
+    color: white;
+}
+
+input{
+    width: 80%;
+    padding: 15px 20px;
+    border: 3px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card-details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+
+i{
+    font-size: 30px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    color: black;
+}
+i:hover{
+    color: red;
+}
+i:active{
+    color: black;
+}
